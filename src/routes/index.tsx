@@ -1,12 +1,13 @@
 import { Route, Switch } from 'react-router-dom';
-import Home from '../pages';
+import PaginaInicial from '../pages/PaginaInicial';
 import '../i18n'
 
 const Routes = () => {
 
   return (
+
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={PaginaInicial} />
     </Switch>
   )
 };

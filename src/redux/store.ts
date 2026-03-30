@@ -11,12 +11,14 @@ import {
   REGISTER
 } from "redux-persist"
 import storage from 'redux-persist/lib/storage';
+import detalhesLink from './modules/detalhesLink'
 
 const reducers = combineReducers({
+  detalhesLink
 })
 
 const persistConfig = {
-  key: "project-template",
+  key: "project-shortener",
   storage,
   blacklist: [
   ]
@@ -37,8 +39,10 @@ const store = configureStore({
 const persistor = persistStore(store)
 
 const persistorInit = () => {
-  getStoredState(persistConfig)
-}
+  getStoredState({
+    storage,
+    key: 'shortener'
+  })}
 
 persistorInit()
 

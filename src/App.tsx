@@ -10,11 +10,19 @@ import DateFnsUtils from "@date-io/date-fns"
 import pt from 'date-fns/locale/pt';
 import es from 'date-fns/locale/es';
 import enGB from 'date-fns/locale/en-GB';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function App() {
 
-  const languageDefault = navigator.language
-  document.documentElement.lang = languageDefault
+
+  const { i18n } = useTranslation();
+  const languageDefault = navigator.language;
+  document.documentElement.lang = languageDefault;
+
+  useEffect(() => {
+    i18n.changeLanguage(languageDefault);
+  }, [languageDefault]);
 
   const returnLocale = () => {
     switch (languageDefault) {
@@ -29,18 +37,17 @@ function App() {
     }
   }
 
-
   return (
     <ErrorBoundary>
       <Theme>
         <MuiPickersUtilsProvider utils={DateFnsUtils} locale={returnLocale()}>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
+              <BrowserRouter>
+                <Routes />
+              </BrowserRouter>
             </PersistGate>
           </Provider>
-          <BrowserRouter>
-            <Routes />
-          </BrowserRouter>
         </MuiPickersUtilsProvider>
       </Theme>
     </ErrorBoundary>
