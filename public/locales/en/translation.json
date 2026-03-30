@@ -1,0 +1,19 @@
+{
+  "tela_inicial": {
+    "titulo_encurtar_links": "Uma ferramenta para encurtar seus links!",
+    "deixar_link_curto": "Deixe seus links mais curtos para tornar mensagens, posts e-mails mais acessíveis, de forma simples e rápida.",
+    "btn_criar_conta": "Criar conta",
+    "titulo_criar_conta": "Por que usar Shortener?",
+    "titulo1_card": "Encurtar links longos",
+    "titulo2_card": "Links personalizáveis",
+    "titulo3_card": "Acompanhe seus links",
+    "titulo4_card": "Compartilhar links",
+    "conteudo1_card": "Deixe seus links mais acessíveis, ecurtando uma URL longa e gerando um link curto.",
+    "conteudo2_card": "Você pode usar palavras-chave para personalizar seus links! Quer enviar um link para uma pessoa? Experimente personalizá-lo com o nome que voce quiser!.",
+    "conteudo3_card": "Quer saber quantos acessos seu link teve? Com o Shortener isso é possivel atrvés da função Contagem de Cliques de cada link.",
+    "conteudo4_card": "Você pode compartilhar seus links  diretamente do Shortener para o WhatsApp, Facebook e E-mail."
+  },
+  "footer": {
+    "disclaimer": "Este projeto foi desenvolvido exclusivamente para fins educacionais e de demonstração de habilidades técnicas, sem qualquer finalidade comercial ou lucrativa."
+  }
+}
