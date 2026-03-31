@@ -1,14 +1,21 @@
 import { Button } from '@material-ui/core'
 import styled from 'styled-components'
 
-export const Content = styled.div<{ overflow?: string, flexdirection?: string }>`
+export const Content = styled.div<{
+  overflow?: string,
+  flexdirection?: string,
+  padding?: string,
+  justifycontent?: string
+}>`
   display: flex;
   flex-direction: ${props => props.flexdirection || 'column'};
   align-items: center;
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100%; 
   background: #FFFFFF;
   overflow: ${props => props.overflow};
+  padding: ${props => props.padding};
+  justify-content: ${props => props.justifycontent};
 `
 export const StyledButton = styled(Button) <{
   textcolor?: string,
