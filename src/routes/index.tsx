@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
-import PaginaInicial from '../pages/PaginaInicial';
 import '../i18n'
+import PaginaInicial from '../pages/PaginaInicial';
+import Cadastro from '../pages/Cadastro';
 
 const Routes = () => {
 
@@ -8,6 +9,8 @@ const Routes = () => {
 
     <Switch>
       <Route exact path="/" component={PaginaInicial} />
+      <Route exact path="/publ/cadastro" component={Cadastro} />
+
     </Switch>
   )
 };
